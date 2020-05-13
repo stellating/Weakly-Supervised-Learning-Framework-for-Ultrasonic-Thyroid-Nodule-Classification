@@ -12,7 +12,7 @@ EndMaster_Demo\test.py # main functions, mobilize the whole system, image prepro
 Receive the image and return to the box extracted from the edge boxes
 EdgeBoxes\edges\the start_server.m
 
-Remove most of the non-nodule boxes using vgg16 
+Remove most of the non-nodule boxes using vgg16: 
 Xception\e0_predictFolder_demo_20181212.py
 
 The original NMS and the improved NMS:
