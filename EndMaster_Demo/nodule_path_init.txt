@@ -1,0 +1,2 @@
+D:\work_space\pycharm_keras\EndMaster_Demo\static\nodules\nodule_0.png 0
+D:\work_space\pycharm_keras\EndMaster_Demo\static\nodules\nodule_1.png 0

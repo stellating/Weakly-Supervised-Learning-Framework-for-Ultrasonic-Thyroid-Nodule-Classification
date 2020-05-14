@@ -1,0 +1,74 @@
+$def with(src, processedfile, vggfile, nmsfile, nms_modified_file, classfile)
+
+<style type="text/css">
+ .yangshi1{ font-weight:bold; font-size: 20pt; margin: 0 0 5pt 0;}
+ .top_style {display: inline-block; text-align: center; margin: 20px 10px 0 0;}
+ </style>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>甲状腺超声图像识别系统</title>
+    </head>
+
+<body>
+    <!-- -->
+    <form method="POST" enctype="multipart/form-data" action="">
+
+        <input type="file" name="myfile"/>
+
+        <input type="submit" value="上传"/>
+    </form>
+    <!-- -->
+    <!-- -->
+    $if src:
+        <div class = "top_style">
+            <div class="yangshi1">原始图像</div>
+            <div>
+                <img src="$src" />
+            </div>
+        </div>
+    <!-- -->
+    <!-- -->
+    $if processedfile:
+        <div class = "top_style">
+            <div class="yangshi1">预处理后的图像</div>
+            <div>
+                <img src="$processedfile" />
+            </div>
+        </div>
+    <!-- -->
+    $if vggfile:
+         <div class = "top_style">
+            <div class="yangshi1">Edge Boxes, VGG-16分类后</div>
+            <div>
+                <img src="$vggfile" />
+            </div>
+        </div>
+    <!-- -->
+    $if nmsfile:
+        <div class = "top_style">
+            <div class="yangshi1">原始NMS算法</div>
+            <div>
+                <img src="$nmsfile" />
+            </div>
+        </div>
+
+    <!-- -->
+    $if nms_modified_file:
+        <div class = "top_style">
+            <div class="yangshi1">改进后的NMS算法（根据score加权）</div>
+            <div>
+                <img src="$nms_modified_file" />
+            </div>
+        </div>
+    <!-- -->
+    $if classfile:
+        <div class = "top_style">
+            <div class="yangshi1">分类结果（p为相应的概率）</div>
+            <div>
+                <img src="$classfile" />
+            </div>
+        </div>
+</body>
+</html>

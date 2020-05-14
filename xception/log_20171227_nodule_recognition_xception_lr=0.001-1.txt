@@ -1,0 +1,422 @@
+F:\mySoftware\Anaconda3\pythonw.exe D:/work_space/pycharm_keras/keras_dnn_thyroid/xception/b0_xception_fine_tune.py
+Using TensorFlow backend.
+countFreeze = 0
+2018-01-01 11:14:47.559317: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX
+2018-01-01 11:14:47.923522: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 970 major: 5 minor: 2 memoryClockRate(GHz): 1.253
+pciBusID: 0000:01:00.0
+totalMemory: 4.00GiB freeMemory: 3.31GiB
+2018-01-01 11:14:47.923836: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 970, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Model loaded.
+model.layers = 134
+0
+<keras.engine.topology.InputLayer object at 0x000001511861D550>
+1
+<keras.layers.convolutional.Conv2D object at 0x000001513D59A438>
+2
+<keras.layers.normalization.BatchNormalization object at 0x000001513E5934E0>
+3
+<keras.layers.core.Activation object at 0x000001513E593E80>
+4
+<keras.layers.convolutional.Conv2D object at 0x000001513E5B6DA0>
+5
+<keras.layers.normalization.BatchNormalization object at 0x000001513E593320>
+6
+<keras.layers.core.Activation object at 0x000001513E5F3C50>
+7
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E65E940>
+8
+<keras.layers.normalization.BatchNormalization object at 0x000001513E64A780>
+9
+<keras.layers.core.Activation object at 0x000001513E6BD0B8>
+10
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E6DA860>
+11
+<keras.layers.normalization.BatchNormalization object at 0x000001513E6EA4E0>
+12
+<keras.layers.convolutional.Conv2D object at 0x000001513E5FD240>
+13
+<keras.layers.pooling.MaxPooling2D object at 0x000001513E755C50>
+14
+<keras.layers.normalization.BatchNormalization object at 0x000001513E60FB38>
+15
+<keras.layers.merge.Add object at 0x000001513E78F710>
+16
+<keras.layers.core.Activation object at 0x000001513E7ABBE0>
+17
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E7C8630>
+18
+<keras.layers.normalization.BatchNormalization object at 0x000001513E7D2B38>
+19
+<keras.layers.core.Activation object at 0x000001513E83D128>
+20
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E85D9B0>
+21
+<keras.layers.normalization.BatchNormalization object at 0x000001513E832F98>
+22
+<keras.layers.convolutional.Conv2D object at 0x000001513E76F550>
+23
+<keras.layers.pooling.MaxPooling2D object at 0x000001513E8D2DD8>
+24
+<keras.layers.normalization.BatchNormalization object at 0x000001513E7B64A8>
+25
+<keras.layers.merge.Add object at 0x000001513E8AFDD8>
+26
+<keras.layers.core.Activation object at 0x000001513E916898>
+27
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E9456D8>
+28
+<keras.layers.normalization.BatchNormalization object at 0x000001513E93CFD0>
+29
+<keras.layers.core.Activation object at 0x000001513E9AF550>
+30
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513E9A6E48>
+31
+<keras.layers.normalization.BatchNormalization object at 0x000001513E9FAFD0>
+32
+<keras.layers.convolutional.Conv2D object at 0x000001513E8DAA90>
+33
+<keras.layers.pooling.MaxPooling2D object at 0x000001513EA21128>
+34
+<keras.layers.normalization.BatchNormalization object at 0x000001513E8EBBA8>
+35
+<keras.layers.merge.Add object at 0x000001513EA5CCF8>
+36
+<keras.layers.core.Activation object at 0x000001513EA42AC8>
+37
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EA49588>
+38
+<keras.layers.normalization.BatchNormalization object at 0x000001513EA7F4E0>
+39
+<keras.layers.core.Activation object at 0x000001513EAAD080>
+40
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EAB4D68>
+41
+<keras.layers.normalization.BatchNormalization object at 0x000001513EA9D828>
+42
+<keras.layers.core.Activation object at 0x000001513EB2AE10>
+43
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EB43940>
+44
+<keras.layers.normalization.BatchNormalization object at 0x000001513EB17748>
+45
+<keras.layers.merge.Add object at 0x000001513EBA4860>
+46
+<keras.layers.core.Activation object at 0x000001513EA31D68>
+47
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EBB8D68>
+48
+<keras.layers.normalization.BatchNormalization object at 0x000001513EBAEF98>
+49
+<keras.layers.core.Activation object at 0x000001513EC29400>
+50
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EC19AC8>
+51
+<keras.layers.normalization.BatchNormalization object at 0x000001513EC19710>
+52
+<keras.layers.core.Activation object at 0x000001513ECA6630>
+53
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513ECACEB8>
+54
+<keras.layers.normalization.BatchNormalization object at 0x000001513ECF0FD0>
+55
+<keras.layers.merge.Add object at 0x000001513ED18CC0>
+56
+<keras.layers.core.Activation object at 0x000001513EBAEEB8>
+57
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513ED0D080>
+58
+<keras.layers.normalization.BatchNormalization object at 0x000001513ED26D30>
+59
+<keras.layers.core.Activation object at 0x000001513ED9ACF8>
+60
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513ED922E8>
+61
+<keras.layers.normalization.BatchNormalization object at 0x000001513EDB30F0>
+62
+<keras.layers.core.Activation object at 0x000001513EE1E550>
+63
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EE27C88>
+64
+<keras.layers.normalization.BatchNormalization object at 0x000001513EE0C940>
+65
+<keras.layers.merge.Add object at 0x000001513EE9BD30>
+66
+<keras.layers.core.Activation object at 0x000001513ED32B38>
+67
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EE93A90>
+68
+<keras.layers.normalization.BatchNormalization object at 0x000001513EEAC908>
+69
+<keras.layers.core.Activation object at 0x000001513EF1E128>
+70
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EF0C1D0>
+71
+<keras.layers.normalization.BatchNormalization object at 0x000001513EF280F0>
+72
+<keras.layers.core.Activation object at 0x000001513EF93E48>
+73
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513EFAD278>
+74
+<keras.layers.normalization.BatchNormalization object at 0x000001513EF8B9E8>
+75
+<keras.layers.merge.Add object at 0x000001513F017550>
+76
+<keras.layers.core.Activation object at 0x000001513EEB2860>
+77
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F00DB38>
+78
+<keras.layers.normalization.BatchNormalization object at 0x000001513F061EF0>
+79
+<keras.layers.core.Activation object at 0x000001513F07EDA0>
+80
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F0A1400>
+81
+<keras.layers.normalization.BatchNormalization object at 0x000001513F0A1EF0>
+82
+<keras.layers.core.Activation object at 0x000001513F10DC18>
+83
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F1409B0>
+84
+<keras.layers.normalization.BatchNormalization object at 0x000001513F1047B8>
+85
+<keras.layers.merge.Add object at 0x000001513F191470>
+86
+<keras.layers.core.Activation object at 0x000001513F01FE10>
+87
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F180860>
+88
+<keras.layers.normalization.BatchNormalization object at 0x000001513F1B2828>
+89
+<keras.layers.core.Activation object at 0x000001513F203CC0>
+90
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F1FBE80>
+91
+<keras.layers.normalization.BatchNormalization object at 0x000001513F215AC8>
+92
+<keras.layers.core.Activation object at 0x000001513F287A90>
+93
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F299EB8>
+94
+<keras.layers.normalization.BatchNormalization object at 0x000001513F2C2DA0>
+95
+<keras.layers.merge.Add object at 0x000001513F304D68>
+96
+<keras.layers.core.Activation object at 0x000001513F1A3198>
+97
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F2FD908>
+98
+<keras.layers.normalization.BatchNormalization object at 0x000001513F31E160>
+99
+<keras.layers.core.Activation object at 0x000001513F389D30>
+100
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F37EC88>
+101
+<keras.layers.normalization.BatchNormalization object at 0x000001513F3A05C0>
+102
+<keras.layers.core.Activation object at 0x000001513F407DD8>
+103
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F41CCF8>
+104
+<keras.layers.normalization.BatchNormalization object at 0x000001513F418208>
+105
+<keras.layers.merge.Add object at 0x000001513F4890F0>
+106
+<keras.layers.core.Activation object at 0x000001513F31E668>
+107
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F47A668>
+108
+<keras.layers.normalization.BatchNormalization object at 0x000001513F494F60>
+109
+<keras.layers.core.Activation object at 0x000001513F505550>
+110
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F50CDD8>
+111
+<keras.layers.normalization.BatchNormalization object at 0x000001513F4FAB38>
+112
+<keras.layers.core.Activation object at 0x000001513F579128>
+113
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F5999B0>
+114
+<keras.layers.normalization.BatchNormalization object at 0x000001513F56EF98>
+115
+<keras.layers.merge.Add object at 0x000001513F60FDD8>
+116
+<keras.layers.core.Activation object at 0x000001513F630E80>
+117
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F676B38>
+118
+<keras.layers.normalization.BatchNormalization object at 0x000001513F651C88>
+119
+<keras.layers.core.Activation object at 0x000001513F6E3CC0>
+120
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F6DA518>
+121
+<keras.layers.normalization.BatchNormalization object at 0x000001513F6FD0B8>
+122
+<keras.layers.convolutional.Conv2D object at 0x000001513F60FF28>
+123
+<keras.layers.pooling.MaxPooling2D object at 0x000001513F767518>
+124
+<keras.layers.normalization.BatchNormalization object at 0x000001513F615A90>
+125
+<keras.layers.merge.Add object at 0x000001513F7A3B70>
+126
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F770C88>
+127
+<keras.layers.normalization.BatchNormalization object at 0x000001513F778198>
+128
+<keras.layers.core.Activation object at 0x000001513F7F1240>
+129
+<keras.layers.convolutional.SeparableConv2D object at 0x000001513F7F1F60>
+130
+<keras.layers.normalization.BatchNormalization object at 0x000001513F816D30>
+131
+<keras.layers.core.Activation object at 0x000001513F85ECC0>
+132
+<keras.models.Sequential object at 0x000001513F888940>
+133
+<keras.models.Sequential object at 0x000001513F8D19E8>
+Found 381240 images belonging to 2 classes.
+Found 4604 images belonging to 2 classes.
+Epoch 1/500
+ - 1649s - loss: 0.1391 - acc: 0.9678 - val_loss: 0.0482 - val_acc: 0.9846
+Epoch 2/500
+ - 1647s - loss: 0.0770 - acc: 0.9818 - val_loss: 0.0357 - val_acc: 0.9870
+Epoch 3/500
+ - 1649s - loss: 0.0599 - acc: 0.9858 - val_loss: 0.0299 - val_acc: 0.9915
+Epoch 4/500
+ - 1653s - loss: 0.0506 - acc: 0.9880 - val_loss: 0.0268 - val_acc: 0.9911
+Epoch 5/500
+ - 1646s - loss: 0.0431 - acc: 0.9896 - val_loss: 0.0300 - val_acc: 0.9909
+Epoch 6/500
+ - 1642s - loss: 0.0381 - acc: 0.9907 - val_loss: 0.0211 - val_acc: 0.9930
+Epoch 7/500
+ - 1656s - loss: 0.0344 - acc: 0.9919 - val_loss: 0.0191 - val_acc: 0.9941
+Epoch 8/500
+ - 1719s - loss: 0.0316 - acc: 0.9926 - val_loss: 0.0183 - val_acc: 0.9935
+Epoch 9/500
+ - 1684s - loss: 0.0287 - acc: 0.9932 - val_loss: 0.0196 - val_acc: 0.9941
+Epoch 10/500
+ - 1673s - loss: 0.0269 - acc: 0.9937 - val_loss: 0.0172 - val_acc: 0.9950
+Epoch 11/500
+ - 1673s - loss: 0.0249 - acc: 0.9939 - val_loss: 0.0175 - val_acc: 0.9954
+Epoch 12/500
+ - 1674s - loss: 0.0226 - acc: 0.9947 - val_loss: 0.0147 - val_acc: 0.9952
+Epoch 13/500
+ - 1684s - loss: 0.0214 - acc: 0.9950 - val_loss: 0.0154 - val_acc: 0.9954
+Epoch 14/500
+ - 1679s - loss: 0.0209 - acc: 0.9950 - val_loss: 0.0123 - val_acc: 0.9965
+Epoch 15/500
+ - 1670s - loss: 0.0199 - acc: 0.9953 - val_loss: 0.0127 - val_acc: 0.9965
+Epoch 16/500
+ - 1658s - loss: 0.0185 - acc: 0.9957 - val_loss: 0.0155 - val_acc: 0.9952
+Epoch 17/500
+ - 1656s - loss: 0.0177 - acc: 0.9959 - val_loss: 0.0151 - val_acc: 0.9954
+Epoch 18/500
+ - 1654s - loss: 0.0159 - acc: 0.9962 - val_loss: 0.0232 - val_acc: 0.9937
+Epoch 19/500
+ - 1637s - loss: 0.0158 - acc: 0.9964 - val_loss: 0.0139 - val_acc: 0.9957
+Epoch 20/500
+ - 1658s - loss: 0.0156 - acc: 0.9964 - val_loss: 0.0145 - val_acc: 0.9957
+Epoch 21/500
+ - 1660s - loss: 0.0146 - acc: 0.9966 - val_loss: 0.0107 - val_acc: 0.9972
+Epoch 22/500
+ - 1658s - loss: 0.0130 - acc: 0.9968 - val_loss: 0.0111 - val_acc: 0.9976
+Epoch 23/500
+ - 1658s - loss: 0.0127 - acc: 0.9970 - val_loss: 0.0123 - val_acc: 0.9967
+Epoch 24/500
+ - 1647s - loss: 0.0129 - acc: 0.9970 - val_loss: 0.0129 - val_acc: 0.9965
+Epoch 25/500
+ - 1635s - loss: 0.0117 - acc: 0.9973 - val_loss: 0.0140 - val_acc: 0.9965
+Epoch 26/500
+ - 1634s - loss: 0.0116 - acc: 0.9974 - val_loss: 0.0106 - val_acc: 0.9976
+Epoch 27/500
+ - 1632s - loss: 0.0107 - acc: 0.9975 - val_loss: 0.0109 - val_acc: 0.9976
+Epoch 28/500
+ - 1633s - loss: 0.0103 - acc: 0.9975 - val_loss: 0.0116 - val_acc: 0.9976
+Epoch 29/500
+ - 1632s - loss: 0.0102 - acc: 0.9977 - val_loss: 0.0133 - val_acc: 0.9967
+Epoch 30/500
+ - 1632s - loss: 0.0101 - acc: 0.9977 - val_loss: 0.0140 - val_acc: 0.9959
+Epoch 31/500
+ - 1632s - loss: 0.0091 - acc: 0.9979 - val_loss: 0.0112 - val_acc: 0.9972
+Epoch 32/500
+ - 1633s - loss: 0.0095 - acc: 0.9978 - val_loss: 0.0103 - val_acc: 0.9974
+Epoch 33/500
+ - 1633s - loss: 0.0089 - acc: 0.9980 - val_loss: 0.0131 - val_acc: 0.9967
+Epoch 34/500
+ - 1633s - loss: 0.0087 - acc: 0.9979 - val_loss: 0.0150 - val_acc: 0.9965
+Epoch 35/500
+ - 1634s - loss: 0.0081 - acc: 0.9982 - val_loss: 0.0103 - val_acc: 0.9972
+Epoch 36/500
+ - 1634s - loss: 0.0083 - acc: 0.9981 - val_loss: 0.0093 - val_acc: 0.9976
+Epoch 37/500
+ - 1634s - loss: 0.0075 - acc: 0.9983 - val_loss: 0.0116 - val_acc: 0.9970
+Epoch 38/500
+ - 1633s - loss: 0.0076 - acc: 0.9983 - val_loss: 0.0105 - val_acc: 0.9978
+Epoch 39/500
+ - 1633s - loss: 0.0074 - acc: 0.9983 - val_loss: 0.0112 - val_acc: 0.9974
+Epoch 40/500
+ - 1633s - loss: 0.0074 - acc: 0.9983 - val_loss: 0.0128 - val_acc: 0.9980
+Epoch 41/500
+ - 1633s - loss: 0.0069 - acc: 0.9984 - val_loss: 0.0117 - val_acc: 0.9974
+Epoch 42/500
+ - 1634s - loss: 0.0062 - acc: 0.9986 - val_loss: 0.0119 - val_acc: 0.9976
+Epoch 43/500
+ - 1633s - loss: 0.0063 - acc: 0.9985 - val_loss: 0.0087 - val_acc: 0.9983
+Epoch 44/500
+ - 1633s - loss: 0.0060 - acc: 0.9986 - val_loss: 0.0098 - val_acc: 0.9983
+Epoch 45/500
+ - 1633s - loss: 0.0059 - acc: 0.9987 - val_loss: 0.0096 - val_acc: 0.9985
+Epoch 46/500
+ - 1633s - loss: 0.0059 - acc: 0.9987 - val_loss: 0.0135 - val_acc: 0.9976
+Epoch 47/500
+ - 1633s - loss: 0.0056 - acc: 0.9987 - val_loss: 0.0135 - val_acc: 0.9972
+Epoch 48/500
+ - 1632s - loss: 0.0058 - acc: 0.9987 - val_loss: 0.0142 - val_acc: 0.9974
+Epoch 49/500
+ - 1633s - loss: 0.0054 - acc: 0.9988 - val_loss: 0.0162 - val_acc: 0.9965
+Epoch 50/500
+ - 1633s - loss: 0.0053 - acc: 0.9987 - val_loss: 0.0118 - val_acc: 0.9980
+Epoch 51/500
+ - 1638s - loss: 0.0047 - acc: 0.9990 - val_loss: 0.0128 - val_acc: 0.9974
+Epoch 52/500
+ - 1641s - loss: 0.0053 - acc: 0.9988 - val_loss: 0.0136 - val_acc: 0.9972
+Epoch 53/500
+ - 1648s - loss: 0.0047 - acc: 0.9989 - val_loss: 0.0134 - val_acc: 0.9974
+Epoch 54/500
+ - 1726s - loss: 0.0048 - acc: 0.9989 - val_loss: 0.0127 - val_acc: 0.9976
+Epoch 55/500
+ - 1660s - loss: 0.0048 - acc: 0.9989 - val_loss: 0.0120 - val_acc: 0.9980
+Epoch 56/500
+ - 1633s - loss: 0.0052 - acc: 0.9988 - val_loss: 0.0113 - val_acc: 0.9972
+Epoch 57/500
+ - 1634s - loss: 0.0055 - acc: 0.9988 - val_loss: 0.0143 - val_acc: 0.9970
+Epoch 58/500
+ - 1634s - loss: 0.0052 - acc: 0.9989 - val_loss: 0.0099 - val_acc: 0.9974
+Epoch 59/500
+ - 1634s - loss: 0.0046 - acc: 0.9990 - val_loss: 0.0138 - val_acc: 0.9970
+Epoch 60/500
+ - 1634s - loss: 0.0043 - acc: 0.9990 - val_loss: 0.0139 - val_acc: 0.9970
+Epoch 61/500
+ - 1634s - loss: 0.0043 - acc: 0.9990 - val_loss: 0.0155 - val_acc: 0.9974
+Epoch 62/500
+ - 1635s - loss: 0.0049 - acc: 0.9989 - val_loss: 0.0151 - val_acc: 0.9965
+Epoch 63/500
+ - 1634s - loss: 0.0041 - acc: 0.9991 - val_loss: 0.0127 - val_acc: 0.9978
+Epoch 64/500
+ - 1634s - loss: 0.0043 - acc: 0.9990 - val_loss: 0.0106 - val_acc: 0.9976
+Epoch 65/500
+ - 1635s - loss: 0.0042 - acc: 0.9990 - val_loss: 0.0113 - val_acc: 0.9976
+Epoch 66/500
+ - 1637s - loss: 0.0038 - acc: 0.9991 - val_loss: 0.0172 - val_acc: 0.9970
+Epoch 67/500
+ - 1649s - loss: 0.0037 - acc: 0.9992 - val_loss: 0.0142 - val_acc: 0.9974
+Epoch 68/500
+ - 1642s - loss: 0.0036 - acc: 0.9992 - val_loss: 0.0129 - val_acc: 0.9980
+Epoch 69/500
+ - 1645s - loss: 0.0035 - acc: 0.9992 - val_loss: 0.0133 - val_acc: 0.9978
+Epoch 70/500
+
+Process finished with exit code 1
